@@ -1,0 +1,16 @@
+{
+    "name": "solarizedDark",
+    "title": "solarizedDark",
+    "description": "Solarized Dark theme as described by http://ethanschoonover.com/solarized",
+    "homepage": "https://github.com/yourname/my-shiny-theme",
+    "version": "0.1.0",
+    "author": "Damien Robertson <robertsondamien@gmail.com> (http://astronomerdamo.github.io/)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "theme.less"
+    },
+    "keywords": ["Solarized", "Dark"]
+}

@@ -1,0 +1,120 @@
+/* Solarized color palette */
+
+@base03: #002b36;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+@base0: #839496;
+@base1: #93a1a1;
+@base2: #eee8d5;
+@base3: #fdf6e3;
+@yellow: #b58900;
+@orange: #cb4b16;
+@red: #dc322f;
+@magenta: #d33682;
+@violet: #6c71c4;
+@blue: #268bd2;
+@cyan: #2aa198;
+@green: #859900;
+
+/* Solarized Dark Code */
+
+.CodeMirror, .CodeMirror-scroll {
+  background-color: @base03;
+  color: @base0;
+}
+.CodeMirror-focused .CodeMirror-activeline-background {
+  background: @base02;
+}
+&.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+  box-shadow: inset 15px 0 0 0 @base02;
+}
+.CodeMirror-focused .CodeMirror-activeline {
+  .CodeMirror-gutter-elt {
+    background: rgba(0, 0, 0, 0.2);
+    color: @base0;
+  }
+  .inline-widget .CodeMirror-gutter-elt {
+    color: @base0;
+  }
+}
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: @cyan;}
+.cm-number, .cm-attribute, .cm-plus {color: @green;}
+.cm-def, .cm-property {color: @violet;}
+.cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @base0;}
+.cm-comment {color: @base01;}
+.cm-error, .cm-minus {color: @red;}
+.cm-header {color: @magenta;}
+.cm-link {color: @orange; text-decoration: none;}
+.cm-rangeinfo {color: @yellow;}
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: @blue;}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+  background-color: @green;
+  &.searching-current-match {
+    background-color: @orange;
+  }
+}
+.CodeMirror-cursor {
+  border-left: 1px solid @base1 !important;
+}
+.CodeMirror-gutters {
+  background-color: @base03;
+  border-right: none;
+}
+.CodeMirror-linenumber {
+  color: @base1;
+}
+.CodeMirror .CodeMirror-selected {
+  background: @base01;
+}
+.CodeMirror-focused .CodeMirror-selected {
+  background: @base02;
+}
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+/* Ensure visibility against gray inline editor background */
+  background-color: @base02;
+  color: @base0 !important;
+}
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid @green;
+}
+
+/* Extra stuff */
+
+.CodeMirror {
+  .CodeMirror {
+    background: transparent;
+  }
+  .CodeMirror .CodeMirror-gutters {
+    background: transparent;
+    border-right: none;
+  }
+  .CodeMirror .CodeMirror-activeline-background {
+    background: transparent;
+  }
+  .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background: transparent;
+    color: @base0;
+  }
+  .CodeMirror-focused .CodeMirror-activeline-background {
+    background: @base02;
+  }
+  .CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+      background: rgba(0, 0, 0, 0.2);
+      color: @base0;
+    }
+  }
+}
+/* Non-editor styling */
+.image-view,
+.not-editor {
+  background-color: @base03;
+}
+.view-pane .image-view {
+  color: @base0;
+}
